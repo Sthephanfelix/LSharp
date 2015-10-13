@@ -19,17 +19,17 @@ namespace xSaliceResurrected.Mid
             LoadMenu();
         }
 
-        private const int QWidth = 200;
+        private const int QWidth = 170;
         private static int _lastNotification;
 
         private void LoadSpell()
         {
-            SpellManager.Q = new Spell(SpellSlot.Q, 875);
+            SpellManager.Q = new Spell(SpellSlot.Q, 855);
             SpellManager.W = new Spell(SpellSlot.W, 1000);
             SpellManager.E = new Spell(SpellSlot.E, 520);
             SpellManager.R = new Spell(SpellSlot.R);
 
-            Q.SetSkillshot(.5f, 190f, float.MaxValue, false, SkillshotType.SkillshotCircle);
+            Q.SetSkillshot(.5f, 160f, float.MaxValue, false, SkillshotType.SkillshotCircle);
             W.SetSkillshot(0.25f, 50f, 1600f, false, SkillshotType.SkillshotCircle);
             R.SetSkillshot(3f, float.MaxValue, float.MaxValue, false, SkillshotType.SkillshotCircle);
 
