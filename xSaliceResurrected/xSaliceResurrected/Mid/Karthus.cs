@@ -19,7 +19,7 @@ namespace xSaliceResurrected.Mid
             LoadMenu();
         }
 
-        private const int QWidth = 170;
+        private const int QWidth = 160;
         private static int _lastNotification;
 
         private void LoadSpell()
@@ -29,7 +29,7 @@ namespace xSaliceResurrected.Mid
             SpellManager.E = new Spell(SpellSlot.E, 520);
             SpellManager.R = new Spell(SpellSlot.R);
 
-            Q.SetSkillshot(.5f, 195f, float.MaxValue, false, SkillshotType.SkillshotCircle);
+            Q.SetSkillshot(.6f, 195f, float.MaxValue, false, SkillshotType.SkillshotCircle);
             W.SetSkillshot(0.25f, 50f, 1600f, false, SkillshotType.SkillshotCircle);
             R.SetSkillshot(3f, float.MaxValue, float.MaxValue, false, SkillshotType.SkillshotCircle);
 
